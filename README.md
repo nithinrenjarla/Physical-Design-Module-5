@@ -252,7 +252,7 @@ Figure-8 – OpenLane Physical Design Execution Output
 # 9. OpenLane Configuration Parameters
 OpenLane uses configuration parameters to control different stages of the physical design flow. Important categories include: Placement Clock Tree Synthesis (CTS) Routing Magic Density Timing Routing optimization.
 
-<img width="00" alt="oo" src="https://github.com/user-attachments/assets/598ef471-6320-4e92-a3c8-873e6b7e61ed" />
+<img width="700" alt="oo" src="https://github.com/user-attachments/assets/598ef471-6320-4e92-a3c8-873e6b7e61ed" />
 
 
 # 10. Routing Output
