@@ -51,222 +51,10 @@ Overall, this module provides practical knowledge of the routing, verification, 
 | **Oracle VM VirtualBox** | Virtual machine environment for running Linux-based tools |
 | **GitHub** | Version control, documentation, and project repository management |
 
-# Log in
-Sign up for free
-You said:
 
-Overview
-This module covers the major stages involved in the physical design flow using the SKY130 technology and OpenLane-based tools.
-
-The work includes:
-
-Global and detailed routing
-Maze routing using Lee's Algorithm
-Design Rule Checking (DRC)
-Wire-width and via-spacing verification
-Parasitic extraction
-SPEF generation
-TritonRoute
-Preprocessed route guides
-Intra-layer and inter-layer routing
-Routing topology optimization
-Connectivity handling
-OpenLane routing and synthesis results
-Physical design flow verification.modify above information and give
-
-ChatGPT said:
-Here is a polished and more formal version of your module overview:
-
-Module Overview – Physical Design Flow
-
-
-
-Overview
-This module provides an overview of the major stages involved in the physical design flow using the SKY130 technology and OpenLane-based tools. It focuses on the practical implementation and verification of the routing and physical design processes.
-
-The module covers the following key topics:
-
-Global routing and detailed routing techniques
-
-Maze routing using Lee’s Algorithm
-
-Intra-layer and inter-layer routing methodologies
-
-Routing topology optimization and connectivity management
-
-Preprocessed route guides and their role in detailed routing
-
-TritonRoute and its application in automated routing
-
-Design Rule Checking (DRC) for physical layout verification
-
-Verification of wire width, spacing, and via-spacing requirements
-
-Parasitic extraction and analysis
-
-Generation and interpretation of Standard Parasitic Exchange Format (SPEF) files
-
-OpenLane-based synthesis and routing results
-
-Verification of the complete physical design flow
-
-Analysis of routing results and identification of potential design-rule violations
-
-Overall, this module provides practical knowledge of the routing, verification, and parasitic extraction stages required to transform a synthesized design into a physically valid layout using SKY130 and OpenLane.
-
-This version is suitable for a lab manual, project report, internship report, or academic documentation.
-
-
-
-You said:
-
-Tools and Technologies
-Tool / Technology	Purpose
-OpenLane	Automated RTL-to-GDSII physical design flow
-SKY130	Open-source 130 nm semiconductor process technology
-TritonRoute	Detailed routing and design-rule-aware routing
-OpenROAD	Physical design implementation and optimization
-OpenSTA	Static Timing Analysis (STA)
-Magic	Layout viewing and physical verification
-LEF	Library Exchange Format containing physical library information
-DEF	Design Exchange Format containing physical design information
-SPEF	Standard Parasitic Exchange Format for extracted parasitic data
-Linux / Ubuntu	Execution environment for the physical design tools
-Oracle VM VirtualBox	Virtual machine environment used to run the Linux-based flow
-GitHub	Version control and documentation of the workshop work.covert as github repo table to keep in my repo.
-
-ChatGPT said:
-Here is a clean GitHub README-style table you can directly add to your repository:
-
-Tools and Technologies
-
-
-Tools and Technologies
-Tool / Technology	Purpose
-OpenLane	Automated RTL-to-GDSII physical design flow
-SKY130	Open-source 130 nm semiconductor process technology
-TritonRoute	Detailed routing and design-rule-aware routing
-OpenROAD	Physical design implementation, optimization, and routing
-OpenSTA	Static Timing Analysis (STA) for timing verification
-Magic	Layout visualization, design-rule checking, and physical verification
-LEF	Library Exchange Format containing physical library and cell information
-DEF	Design Exchange Format containing physical design and layout information
-SPEF	Standard Parasitic Exchange Format containing extracted parasitic data
-Linux / Ubuntu	Operating system environment for executing the physical design flow
-Oracle VM VirtualBox	Virtual machine environment used to run the Linux-based EDA tools
-GitHub	Version control, project documentation, and storage of design files and results
-
-Technology Stack
-RTL Design
-    ↓
-OpenLane
-    ↓
-OpenROAD
-    ↓
-Placement & Optimization
-    ↓
-TritonRoute
-    ↓
-Detailed Routing
-    ↓
-Magic / DRC
-    ↓
-Parasitic Extraction
-    ↓
-SPEF
-    ↓
-OpenSTA
-    ↓
-Timing & Physical Verification
-    ↓
-GDSII
-
-
-
-You said:
-
-repo table
-
-ChatGPT said:
-If you mean a simple table to put directly in your GitHub repository README, use this:
-
-Tools and Technologies Repository Table
-
-
-S.No.	Tool / Technology	Purpose
-1	OpenLane	Automated RTL-to-GDSII physical design flow
-2	SKY130	Open-source 130 nm semiconductor process technology
-3	TritonRoute	Detailed routing and design-rule-aware routing
-4	OpenROAD	Physical design implementation and optimization
-5	OpenSTA	Static Timing Analysis (STA)
-6	Magic	Layout viewing, DRC, and physical verification
-7	LEF	Physical library and cell information
-8	DEF	Physical design and layout information
-9	SPEF	Extracted parasitic data
-10	Linux / Ubuntu	Environment for running the physical design tools
-11	Oracle VM VirtualBox	Virtual machine environment for Linux-based tools
-12	GitHub	Version control, project documentation, and repository management
-
-
-
-You said:
-
-no, like |**tool**| like these.
-
-ChatGPT said:
-Got it — you want the raw Markdown table format with | separators, suitable for directly pasting into your GitHub README.md.
-
-| **Tool / Technology** | **Purpose** |
-|---|---|
-| **OpenLane** | Automated RTL-to-GDSII physical design flow |
-| **SKY130** | Open-source 130 nm semiconductor process technology |
-| **TritonRoute** | Detailed routing and design-rule-aware routing |
-| **OpenROAD** | Physical design implementation and optimization |
-| **OpenSTA** | Static Timing Analysis (STA) |
-| **Magic** | Layout viewing, DRC, and physical verification |
-| **LEF** | Library Exchange Format containing physical library information |
-| **DEF** | Design Exchange Format containing physical design information |
-| **SPEF** | Standard Parasitic Exchange Format for extracted parasitic data |
-| **Linux / Ubuntu** | Execution environment for physical design tools |
-| **Oracle VM VirtualBox** | Virtual machine environment for running Linux-based tools |
-| **GitHub** | Version control, documentation, and project repository management |
-
-
-
-You said:
-
-Introduction
-Physical Design is an important stage in the VLSI design flow where the synthesized circuit is converted into a physical layout that can be fabricated on silicon.
-
-In this module, the SKY130 technology and OpenLane-based physical design flow are explored with a focus on routing and post-routing analysis. The module covers global and detailed routing, maze routing using Lee's Algorithm, Design Rule Checking (DRC), wire-width and via-spacing verification, parasitic extraction, SPEF generation, and detailed routing using TritonRoute.
-
-The practical work also covers route-guide preprocessing, intra-layer parallel routing, inter-layer sequential routing, connectivity handling, routing topology optimization, and inspection of OpenLane-generated synthesis and routing results.
-
-The objective of this module is to understand how routing is performed while satisfying physical design rules, maintaining connectivity, and preparing the design for post-layout timing and physical verification
-
-ChatGPT said:
-Here is a polished GitHub README-ready Introduction in the same style:
 
 ## Introduction
 
-Physical Design is a crucial stage in the VLSI design flow, where the synthesized circuit is transformed into a physical layout suitable for fabrication on silicon.
-
-This module explores the **SKY130 technology** and the **OpenLane-based physical design flow**, with a primary focus on routing and post-routing analysis. It covers **global routing, detailed routing, maze routing using Lee's Algorithm, Design Rule Checking (DRC), wire-width and via-spacing verification, parasitic extraction, SPEF generation, and detailed routing using TritonRoute**.
-
-The practical work also includes **route-guide preprocessing, intra-layer parallel routing, inter-layer sequential routing, connectivity management, routing topology optimization, and analysis of OpenLane-generated synthesis and routing results**.
-
-The main objective of this module is to understand how routing is performed while satisfying physical design rules, maintaining proper connectivity, minimizing routing issues, and preparing the design for **post-layout timing analysis and physical verification**.
-
-
-
-You said:
-
-no modify the information
-
-ChatGPT said:
-Understood — you want the information itself modified/rephrased, not just formatted. Here is a revised version with different wording while keeping the same technical meaning:
-
-## Introduction
 Physical design is a fundamental stage in the VLSI design process, where the synthesized circuit is transformed into a physical layout suitable for implementation on silicon. It involves arranging the circuit components and establishing the required interconnections while satisfying various physical and manufacturing constraints.
 
 This module focuses on the physical design flow using the SKY130 technology and OpenLane-based tools, with particular emphasis on routing and post-routing analysis. The major areas covered include global routing, detailed routing, maze routing using Lee’s Algorithm, Design Rule Checking (DRC), wire-width and via-spacing checks, parasitic extraction, SPEF generation, and detailed routing using TritonRoute.
@@ -295,7 +83,8 @@ The routing stage establishes physical connections between the input and output 
 
 Figure 1 – Routing Layout
 
-III
+<img width="700" alt="qq" src="https://github.com/user-attachments/assets/f20b88e4-c3d7-45ec-81ae-74d4258f6464" />
+
 
 # 2. Maze Routing – Lee's Algorithm
 Maze routing is a grid-based routing method used to determine a feasible connection between a source and destination while avoiding obstacles present in the routing area. Lee's Algorithm systematically explores the routing grid and assigns distance values to the accessible cells until the destination is reached.
@@ -314,7 +103,8 @@ The main steps of Lee's Algorithm are:
 
 Figure 2 – Maze Routing Using Lee's Algorithm
 
-IIII
+<img width="700" alt="ww" src="https://github.com/user-attachments/assets/b4e883ea-61b6-4a3f-a23f-b17afe2ecd92" />
+
 
 # 3. Design Rule Checking
 Design Rule Checking (DRC) is an essential verification step in the physical design process. It checks whether the physical layout complies with the manufacturing and geometric rules specified by the selected semiconductor technology. DRC helps identify layout violations that could affect manufacturability or circuit reliability.
@@ -338,7 +128,8 @@ A DRC-clean layout is a physical layout in which no violations of the defined de
 
 Figure 3 – DRC Clean Layout
 
-IIII
+<img width="700" alt="ee" src="https://github.com/user-attachments/assets/fd6c8ef3-9174-447d-8a55-77918905d547" />
+
 
 # 4. DRC – Via Spacing
 
@@ -348,7 +139,8 @@ Maintaining the required spacing between adjacent vias and nearby metal features
 
 Figure 4 – Via Spacing
 
-IIII
+<img width="700" alt="rr" src="https://github.com/user-attachments/assets/23d9dae7-56f1-4739-8406-4f36dac8e50d" />
+
 
 # 5.Parasitic Extraction
 
@@ -368,9 +160,10 @@ The extracted parasitic data is then used during post-layout timing analysis to 
 
 Figure-5 – Parasitic Extraction
 
-IIII
+<img width="700" alt="ttt" src="https://github.com/user-attachments/assets/328b1d6c-b557-4025-aae1-a24df5ffa8a4" />
 
-# 6.7. OpenLane Physical Design Flow
+
+# 6.OpenLane Physical Design Flow
 OpenLane automates several stages of the RTL-to-GDSII physical design flow.
 
 A simplified flow is:
@@ -399,7 +192,152 @@ Timing Analysis
 GDSII
 ```
 
+<img width="700" alt="yy" src="https://github.com/user-attachments/assets/c0c71303-f8d1-493b-948f-c5b675afb323" />
 
 
+# 7.Floorplanning and Power Planning
+
+Floorplanning is the initial physical-design stage where the basic physical structure of the chip is defined. It determines how the core, standard cells, I/O ports, and power distribution network are arranged within the available area.
+
+Key aspects of this stage include:
+
+- Core and die area definition
+
+- Standard-cell row arrangement
+
+- I/O pin placement
+
+- Macro placement
+
+- Power rings
+
+- Power straps
+
+- Power distribution planning
+
+A well-planned floorplan helps utilize chip area efficiently and provides proper power delivery and routing resources for the later stages of physical design.
+
+Figure-7 – Floorplan and Power Planning
+
+<img width="700" alt="uu" src="https://github.com/user-attachments/assets/c4bd8f73-c0a1-4de2-a1fc-41f269017387" />
+
+
+# 8. OpenLane Physical Design Execution
+
+The OpenLane flow executes the complete physical-design process in a sequence of automated stages. During execution, OpenLane generates various intermediate results, reports, logs, and final layout files.
+
+The execution output can be used to monitor the progress of each stage and verify whether the design has successfully passed the required physical-design checks.
+
+Key outputs include:
+
+- Synthesis and netlist files
+
+- Floorplan and placement data
+
+- CTS and routing results
+
+- Timing reports
+
+- DRC and LVS reports
+
+- Parasitic extraction data
+
+- Final GDSII layout
+
+Figure-8 – OpenLane Physical Design Execution Output
+
+<img width="700" alt="ii" src="https://github.com/user-attachments/assets/38f88067-a540-4733-a1bc-705fa6edb078" />
+
+
+# 9. OpenLane Configuration Parameters
+OpenLane uses configuration parameters to control different stages of the physical design flow. Important categories include: Placement Clock Tree Synthesis (CTS) Routing Magic Density Timing Routing optimization.
+
+<img width="00" alt="oo" src="https://github.com/user-attachments/assets/598ef471-6320-4e92-a3c8-873e6b7e61ed" />
+
+
+# 10. Routing Output
+After the routing stage, the generated routing information can be inspected from the OpenLane run directories.
+
+<img width="700" alt="pp" src="https://github.com/user-attachments/assets/7a54297a-9a0c-41ed-b8e7-c3f5979bbfa8" />
+
+
+# 11. OpenLane TritonRoute Execution
+The TritonRoute stage can be executed from the OpenLane working directory. 
+
+<img width="700" alt="aaa" src="https://github.com/user-attachments/assets/80d5df82-7836-4894-8f0f-4df4d9bc4532" />
+
+
+# 12. Routing Data Generation
+After routing, routing-related information is stored in the corresponding OpenLane run directories.
+
+<img width="700" alt="dd" src="https://github.com/user-attachments/assets/3d05925e-b6ba-4d49-bf0a-021860e0ce7e" />
+
+
+# 13. SPEF / Parasitic Extraction
+Standard Parasitic Exchange Format (SPEF) is used to represent extracted parasitic information. SPEF contains information related to: Resistance Capacitance Nets Interconnect parasitics Connectivity.
+
+<img width="1297" height="696" alt="mm" src="https://github.com/user-attachments/assets/f88e389a-0b13-4489-ab7d-932fb7f86d47" />
+
+
+# 14.OpenLane Synthesis and Routing Results
+
+OpenLane organizes the outputs generated during the RTL-to-GDSII flow into separate directories for easy access and analysis. Each directory contains the files and reports associated with a particular physical-design stage.
+
+Important result directories include:
+```text
+results/
+├── synthesis/
+├── floorplan/
+├── placement/
+├── cts/
+├── routing/
+└── signoff/
+```
+
+These results help in reviewing the progress of the design, analyzing implementation data, and verifying the final physical-design quality.
+
+<img width="700" alt="gg" src="https://github.com/user-attachments/assets/8fbd1f53-ec45-4425-818e-5f25c5e2d20b" />
+
+# Key Learning Outcomes
+
+Through this module, the following physical-design concepts and practical aspects were explored:
+
+- Understanding the fundamentals of physical design routing
+
+- Studying maze routing and Lee’s Algorithm
+
+- Understanding global routing and detailed routing
+
+- Exploring fast routing techniques and detailed routing
+
+- Understanding the role of TritonRoute in detailed routing
+
+- Working with route guides and route-guide preprocessing
+
+- Understanding intra-layer and inter-layer routing
+
+- Studying access points and access-point clustering
+
+- Understanding routing topology optimization
+
+- Performing Design Rule Checking (DRC)
+
+- Understanding wire-width and via-spacing requirements
+
+- Studying parasitic extraction and its impact on timing
+
+- Understanding SPEF generation
+
+- Analyzing OpenLane routing and physical-design results
+
+- Understanding the OpenLane directory structure and generated outputs.
+
+# Conclusion
+
+This module provided hands-on understanding of the physical-design stages after placement, with a major focus on routing, detailed routing, DRC verification, and parasitic extraction.
+
+The practical work demonstrated how OpenLane and TritonRoute are used to implement and verify physical connections while satisfying routing constraints such as connectivity, wire width, via spacing, and design rules. The study of parasitic extraction and SPEF generation further showed how physical interconnect effects are captured for accurate post-layout analysis.
+
+Overall, the generated routing results, DRC reports, parasitic data, and OpenLane outputs provide essential information for subsequent timing analysis, signoff checks, and final physical-design verification.
 
 
